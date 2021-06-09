@@ -6,8 +6,6 @@ class BankTestSuite(unittest.TestCase):
 	pass
 
 
-
-
 class AccountTestSuite(unittest.TestCase):
 
 	def __init__(self, methodName: str) -> None:
@@ -17,7 +15,7 @@ class AccountTestSuite(unittest.TestCase):
 	def test_create_check_initial_balance(self):
 		initial_balance = 500
 		a = Account(1, initial_balance)
-		
+
 		self.assertEqual(a.get_balance(), initial_balance)
 
 
